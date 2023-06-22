@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera entrega JvScpt</title>
+	<link rel="stylesheet" href="./CSS/Style.css">
+</head>
+<body>
+    <form id="formulario" onsubmit="return validar()">
+		<label for="nombre">Nombre:</label><br>
+		<input type="text" id="nombre" name="nombre" required><br>
+
+		<label for="edad">Edad:</label><br>
+		<input type="number" id="edad" name="edad" min="18" required><br>
+
+		<label for="id">ID:</label><br>
+		<input type="text" id="id" name="id" maxlength="15" required><br>
+
+		<label for="correo">Correo electrónico:</label><br>
+		<input type="email" id="correo" name="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
